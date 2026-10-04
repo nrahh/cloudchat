@@ -28,7 +28,7 @@ export default function Authentication({setSignedIn}) {
         const email = (document.getElementById("email") as HTMLInputElement)?.value;
         const password = (document.getElementById("password") as HTMLInputElement)?.value;
 
-        const response = await fetch("https://cloudchat-8rs3.onrender.com:3000/signin", {
+        const response = await fetch("https://cloudchat-8rs3.onrender.com/signin", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
