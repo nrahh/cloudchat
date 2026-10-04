@@ -38,7 +38,7 @@ export default function Conversations() {
             return;
         }
 
-        const response = await fetch("http://localhost:3000/fetchconversations", {
+        const response = await fetch("https://cloudchat-8rs3.onrender.com/fetchconversations", {
             method: "POST",
             headers: {
                 Authorization: `Bearer ${token}`
@@ -75,7 +75,7 @@ export default function Conversations() {
         const payload = JSON.parse(atob(token.split(".")[1]));
         const fromID = payload.adderID;
 
-        const response = await fetch("http://localhost:3000/createconversation", {
+        const response = await fetch("https://cloudchat-8rs3.onrender.com/createconversation", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -108,7 +108,7 @@ export default function Conversations() {
             return;
         }
 
-        const response = await fetch("http://localhost:3000/modifymessage", {
+        const response = await fetch("https://cloudchat-8rs3.onrender.com/modifymessage", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -139,7 +139,7 @@ export default function Conversations() {
             return;
         }
 
-        const response = await fetch("http://localhost:3000/fetchmessages", {
+        const response = await fetch("https://cloudchat-8rs3.onrender.com/fetchmessages", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -174,7 +174,7 @@ export default function Conversations() {
             return;
         }
 
-        const response = await fetch("http://localhost:3000/sendmessage", {
+        const response = await fetch("https://cloudchat-8rs3.onrender.com/sendmessage", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
